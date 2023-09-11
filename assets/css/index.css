@@ -1,3 +1,11 @@
+:root{
+    --primer-color: #ff6347;
+    --secundary-color: #0a1128;
+    --white-color: #ffffff;
+    --gap: 30px;
+    --light-grey-color: #eeeeee;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +16,7 @@ html{
 }
 body{
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -19,6 +27,80 @@ h1, h2, h3, h4, h5, h6{
     background-image: url('/assets/img/main-bg.svg');
     background-size: cover;
     background-position: center center;
+    color: var(--white-color);
+}
+
+.white-bg{
+    background-color: var(--white-color);
+}
+
+.main-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+
+
+.section{
+    height: 100vh;
+}
+
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu{
+    background-color: var(--white-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--light-grey-color);
+}
+
+.menu h1{
+    font-size: 2.34rem;
+    color: var(--primer-color)
+}
+
+.menu h1 a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu nav ul li a{
+    text-decoration: none;
+    color: var(--primer-color);
+    display: block;
+    padding: 2rem;
+    position: relative;
+}
+
+.menu nav ul li a::after{
+    content: '';
+    bottom: 1.5rem;
+    left: 50%;
+    background-color: #dc143c;
+    width: 0;
+    height: 0.2rem;
+    position: absolute;
+    transition: all 300ms ease-in-out;
+}
+
+.menu nav ul li a:hover::after{
+    width: 50%;
+    left: 25%
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
 }
 
 
