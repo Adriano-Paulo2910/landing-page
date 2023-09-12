@@ -126,7 +126,7 @@ h2{
     top: -8.96rem;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
 
 }
 
@@ -147,9 +147,10 @@ h2{
 
 .about-us-content{
     max-width: 80rem;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -157,4 +158,35 @@ h2{
 
 .about-us-content p{
     margin-bottom: 3rem;
+}
+
+.grid-one-content{
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+
+.grid h2{
+    font-size: 3rem;
+}
+
+.grid h3{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.grid article p{
+    text-align: justify;
+}
+
+.grid article{
+    padding: 30px;
 }
