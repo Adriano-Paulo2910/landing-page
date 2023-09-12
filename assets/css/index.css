@@ -13,7 +13,9 @@
 }
 
 html{
-    font-size: 62.5%
+    font-size: 62.5%;
+    line-height: 1.5;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Open Sans', sans-serif;
@@ -103,4 +105,38 @@ h1, h2, h3, h4, h5, h6{
     list-style: none;
 }
 
+.espacamento{
+    height: 8.96rem;
+}
 
+.intro-content{
+    display: grid;
+    position:relative;
+    top: -8.96rem;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 100vh;
+
+}
+
+.intro-column-01, .intro-column-02{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:center;
+}
+
+.intro-column-01 h2{
+    font-size: 5.5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+
+.intro-column-01 p{
+    text-align: justify;
+}
+
+.intro-column-02 img{
+    max-width: 100%;
+    height: auto;
+}
