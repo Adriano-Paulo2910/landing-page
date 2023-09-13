@@ -117,7 +117,7 @@ h2{
 }
 
 .espacamento{
-    height: 8.96rem;
+    height: 7rem;
 }
 
 .intro-content{
@@ -338,4 +338,192 @@ footer a{
 
 footer p{
     padding: 4rem;
+}
+
+/*Deixando site responsivo*/
+
+@media (max-width: 80rem){
+    .intro-content, .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img img{
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .menu{
+        bottom: 0;
+        text-align: center;
+    }
+
+    .menu-content, .menu-content ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content{
+        height: 100vh;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .close-menu{
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
+
+    .close-menu-label::after{
+        content: '≡';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background-color: var(--primer-color);
+        color: var(--white-color);
+        font-size: 2rem;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+        line-height: 3rem;
+        text-align: center;
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu{
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after{
+        content: '×';
+    }
+}
+
+/* Tamanhos de fonte para telas menores */
+@media (max-width: 76.8rem) {
+    html {
+        font-size: 50%;
+    }
+}
+
+/* Estilos para a barra de menu em telas menores */
+@media (max-width: 76.8rem) {
+    .menu-content ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-content ul li {
+        margin-bottom: 1rem;
+    }
+
+    .menu-content ul li a::after {
+        width: 0;
+    }
+}
+
+/* Estilos para a seção de introdução em telas menores */
+@media (max-width: 76.8rem) {
+    .intro-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .intro-column-01, .intro-column-02 {
+        text-align: center;
+    }
+
+    .intro-column-02 img {
+        margin-top: 2rem;
+    }
+}
+
+/* Estilos para a grade de conteúdo em telas menores */
+@media (max-width: 76.8rem) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid h2 {
+        font-size: 2.5rem;
+    }
+
+    .grid article {
+        padding: 20px;
+    }
+}
+
+/* Estilos para a galeria de imagens em telas menores */
+@media (max-width: 76.8rem) {
+    .gallery-img img:hover {
+        transform: none;
+    }
+}
+
+/* Estilos para o menu mobile */
+@media (max-width: 76.8rem) {
+    .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        border-bottom: 0.1rem solid var(--light-grey-color);
+        background-color: var(--white-color);
+    }
+
+    .menu h1 {
+        font-size: 2rem;
+        color: var(--primer-color);
+    }
+
+    .menu-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .close-menu {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+
+    .close-menu-label::after {
+        content: '≡';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background-color: var(--primer-color);
+        color: var(--white-color);
+        font-size: 2rem;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+        line-height: 3rem;
+        text-align: center;
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+        display: block;
+    }
+
+    .close-menu:checked ~ .menu {
+        display: block;
+    }
+
+    .close-menu:checked ~ .close-menu-label::after {
+        content: '×';
+    }
 }
