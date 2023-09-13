@@ -13,7 +13,7 @@
     <title>Landing-Page</title>
 </head>
 
-<body class="main-bg">
+<body>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
             <h1>
@@ -23,11 +23,11 @@
             <nav>
                 <ul>
                     <li><a href="#intro">intro</a></li>
-                    <li><a href="#about-us">about-us</a></li>
-                    <li><a href="#work">work</a></li>
-                    <li><a href="#gallery">gallery</a></li>
-                    <li><a href="#pricing">pricing</a></li>
-                    <li><a href="#contact-us">contact-us</a></li>
+                    <li><a href="#about-us">Sobre-nós</a></li>
+                    <li><a href="#work">Trabalhos</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#pricing">Preços</a></li>
+                    <li><a href="#contact-us">contate-nos</a></li>
                 </ul>
             </nav>
         </div>
@@ -53,7 +53,7 @@
 
     <section class="white-bg section" id="about-us">
         <div class="main-content about-us-content">
-            <h2>about-us</h2>
+            <h2>O que é a XPTO</h2>
             <p>
                 Somos um grupo de entusiastas apaixonados por desenvolvimento web. Nossa equipe dedica-se a criar
                 conteúdo informativo e educativo sobre HTML, CSS e JavaScript para ajudar você a se tornar um
@@ -76,7 +76,7 @@
 
     <section class="section main-bg" id="work">
         <div class="grid-one-content main-content">
-            <h2>Grid 3 columns</h2>
+            <h2>Trabalhos</h2>
             <p class="description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
@@ -111,7 +111,7 @@
 
     <section class="section white-bg" id="gallery">
         <div class="main-content grid-one-content">
-            <h2 class="grid-main-heading">Gallery</h2>
+            <h2 class="grid-main-heading">Galeria</h2>
 
             <div class="grid">
                 <div class="gallery-img">
@@ -143,7 +143,7 @@
 
     <section class="section main-bg" id="">
         <div class="grid-one-content main-content">
-            <h2>Our Services</h2>
+            <h2>Nossos Serviços</h2>
             <p class="description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
@@ -178,9 +178,10 @@
 
     <section class="white-bg section" id="pricing">
         <div class="main-content about-us-content">
-            <h2>Price</h2>
+            <h2>Preços</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim debitis ad unde exercitationem sunt? Eos ipsam, debitis quaerat sapiente ex iusto, sint tempore dolores facilis nobis repellat soluta quasi sed.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim debitis ad unde exercitationem sunt? Eos
+                ipsam, debitis quaerat sapiente ex iusto, sint tempore dolores facilis nobis repellat soluta quasi sed.
             </p>
 
             <div class="responsive-table">
@@ -224,6 +225,54 @@
         </div>
     </section>
 
+    <section class="intro main-bg section" id="contact-us">
+        <div class="main-content intro-content">
+            <div class="intro-column-01">
+                <h2>contate nos</h2>
+                <p>
+                    Quer fazer uma pergunta, dar feedback ou colaborar conosco? Não hesite em entrar em contato. Estamos
+                    aqui para ajudar e adorar ouvir de você.
+                </p>
+            </div>
+
+            <div class="intro-column-02">
+                <img src="./assets/img/contact-us.svg" alt="Imagem-intro">
+            </div>
+
+            <div class="form-contact">
+                <fieldset class="flex-form">
+                    <legend>contate-nos</legend>
+                    <div class="form-group">
+                        <label for="first-name">Primeiro Nome</label>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Último Nome</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" autocapitalize="off">
+                    </div>
+
+                    <div class="form-group txt-area">
+                        <label for="sms">Mensagem</label>
+                        <textarea name="sms" id="sms" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                       <button type="submit">Enviar Mensagem</button>
+                    </div>
+            </div>
+            </fieldset>
+        </div>
+    </section>
+
+    <footer class="white-bg">
+        <p><a href="#">Feito por <span>Adriano Cadete Paulo</span></a></p>
+    </footer>
 </body>
 
 </html>

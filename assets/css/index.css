@@ -10,6 +10,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -32,7 +33,6 @@ h2{
     margin-bottom: 5rem;
     text-transform: uppercase;
     line-height: 1.3;
-
 }
 
 .main-bg{
@@ -123,7 +123,7 @@ h2{
 .intro-content{
     display: grid;
     position:relative;
-    top: -8.96rem;
+    /*top: -8.96rem;*/
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
     min-height: 100vh;
@@ -237,4 +237,89 @@ table th{
 tfoot tr td{
     text-align: center;
     background-color: var(--light-grey-color);
+}
+
+.form-contact{
+    grid-column: span 2;
+}
+
+.form-contact fieldset{
+    border: none;
+}
+
+.form-contact legend{
+    font-style: italic;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.form-contact .flex-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.form-group{
+    flex: 1 1 32rem;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea{
+    border: none;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    font-size: 1.8rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    box-shadow: 0 0 1rem 0.2rem var(--primer-color);
+}
+
+div.txt-area{
+    flex: 1 1 100%;
+}
+
+.form-group button{
+    color: var(--white-color);
+    border: none;
+    background-color: var(--primer-color);
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 0 2rem 0 var(--secndary-color);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover{
+    color: var(--primer-color);
+    background-color: var(--white-color);
+}
+
+footer{
+    text-align: center;
+}
+
+footer span{
+    color: var(--primer-color);
+    font-weight: bold;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--secundary-color);
+}
+
+footer p{
+    padding: 4rem;
 }
